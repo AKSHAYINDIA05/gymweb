@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Color.fromARGB(255, 210, 191, 191),
+          seedColor: const Color.fromARGB(255, 210, 191, 191),
         ),
         useMaterial3: true,
       ),
@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => Profile(),
+                  builder: (context) => const Profile(),
                 ),
               );
             },
@@ -85,17 +85,17 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
+                  SizedBox(
                     width: 220,
                     child: Text(
                       'Check out our Fatloss workouts',
                       style: GoogleFonts.poppins(
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
-                  Icon(
+                  const Icon(
                     Icons.arrow_right_alt,
                     size: 40,
                   )
@@ -112,11 +112,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
                         border: Border.all(
-                            color: Color.fromARGB(255, 210, 191, 191)),
+                            color: const Color.fromARGB(255, 210, 191, 191)),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Column(
                           children: [
                             Padding(
@@ -130,7 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             Text(
                               'Workout - 1',
                               style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
+                                textStyle: const TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w300),
                               ),
                             ),
@@ -138,18 +138,18 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 16,
                     ),
                     Container(
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
                         border: Border.all(
-                            color: Color.fromARGB(255, 210, 191, 191)),
+                            color: const Color.fromARGB(255, 210, 191, 191)),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Column(
                           children: [
                             Padding(
@@ -163,7 +163,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             Text(
                               'Workout - 2',
                               style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
+                                textStyle: const TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w300),
                               ),
                             ),
@@ -171,18 +171,18 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 16,
                     ),
                     Container(
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
                         border: Border.all(
-                            color: Color.fromARGB(255, 210, 191, 191)),
+                            color: const Color.fromARGB(255, 210, 191, 191)),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Column(
                           children: [
                             Padding(
@@ -196,7 +196,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             Text(
                               'Workout - 3',
                               style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
+                                textStyle: const TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w300),
                               ),
                             ),
@@ -217,7 +217,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     'Track your Activity',
                     style: GoogleFonts.poppins(
                       textStyle:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                          const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                     ),
                   ),
                   Image.asset('assets/images/image4.png'),
@@ -230,13 +230,13 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Transform.translate(
-          offset: Offset(0, -10),
+          offset: const Offset(0, -10),
           child: Container(
             height: 70,
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 210, 191, 191),
+              color: const Color.fromARGB(255, 210, 191, 191),
               border: Border.all(
-                color: Color.fromARGB(255, 210, 191, 191),
+                color: const Color.fromARGB(255, 210, 191, 191),
               ),
               borderRadius: BorderRadius.circular(50),
             ),

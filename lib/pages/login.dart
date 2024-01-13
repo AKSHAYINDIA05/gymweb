@@ -66,14 +66,14 @@ class _LoginState extends State<Login> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => MyHomePage(),
+                          builder: (context) => const MyHomePage(),
                         ),
                       );
                     },
                     child: Text(
                       'Login',
                       style: GoogleFonts.poppins(
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                           fontSize: 20,
                         ),
                       ),

@@ -32,7 +32,7 @@ class _LeadingState extends State<Leading> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Login(),
+                      builder: (context) => const Login(),
                     ),
                   );
                 },
@@ -41,7 +41,7 @@ class _LeadingState extends State<Leading> {
                   child: Text(
                     'Login',
                     style: GoogleFonts.poppins(
-                      textStyle: TextStyle(fontSize: 25, color: Colors.black),
+                      textStyle: const TextStyle(fontSize: 25, color: Colors.black),
                     ),
                   ),
                 ),
@@ -51,7 +51,7 @@ class _LeadingState extends State<Leading> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => SignUp(),
+                      builder: (context) => const SignUp(),
                     ),
                   );
                 },
@@ -60,7 +60,7 @@ class _LeadingState extends State<Leading> {
                   child: Text(
                     'Signup',
                     style: GoogleFonts.poppins(
-                      textStyle: TextStyle(fontSize: 25, color: Colors.black),
+                      textStyle: const TextStyle(fontSize: 25, color: Colors.black),
                     ),
                   ),
                 ),
